@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cl.atempoweb.cachureos.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AnvilMenuMixin",
+    "EnchantmentHelperMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "plugin": "cl.atempoweb.cachureos.mixin.CachureosMixinConfigPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "${refmap_target}refmap.json"
+}

@@ -1,6 +1,7 @@
 package cl.atempoweb.cachureos.datagen;
 
 import cl.atempoweb.cachureos.Cachureos;
+import cl.atempoweb.cachureos.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //simpleItem(ModItems.REINFORCER_BRUSH);
+        simpleItem(ModItems.NOVICE_BLUEPRINT);
+        simpleItem(ModItems.ADVANCED_BLUEPRINT);
+        simpleItem(ModItems.EXPERT_BLUEPRINT);
+
+        simpleItem(ModItems.WHIRLPOOL_VEIL);
     }
 
     private ItemModelBuilder simpleItem(DeferredItem<Item> item){

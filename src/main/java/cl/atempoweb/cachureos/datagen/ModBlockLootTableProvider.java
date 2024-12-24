@@ -1,5 +1,6 @@
 package cl.atempoweb.cachureos.datagen;
 
+import cl.atempoweb.cachureos.block.ModBlocks;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
@@ -18,10 +19,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         //this.add(ModBlocks.DEEPSLATE_QUARTZ_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_QUARTZ_ORE.get(), Items.QUARTZ));
     }
 
-    /*@Override
+    @Override
     protected Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries().stream().map(
             blockDeferredHolder -> (Block)blockDeferredHolder.get()
         )::iterator;
-    }*/
+    }
 }
